@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movies Seats App</title>
+    
+    <!-- Animate.css Import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+    <!-- Bootstrap Import -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Import -->
+    <script src="https://kit.fontawesome.com/d5e8337ebb.js" crossorigin="anonymous"></script>
+    <!-- CSS File -->
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <i class="fa fa-film fa-3x"></i>
+        <div id="" class="header py-5 transition-fade">
+            <span class="title h3">Movies: </span>            
+            <select id="movies-name">
+                <option id="" value="Select-A-Movie">Select-A-Movie</option>
+                <option id="avengers-endgame" value="Avengers Infinity War">Avengers Endgame</option>
+                <option id="joker" value="Joker">Joker</option>
+                <option id="interstellar" value="Interstellar">Interstellar</option>
+                <option id="jurrasic-world" value="Jurrasic World">Jurrasic World</option>
+                <option id="the-martian" value="The Martian">The Martian</option>
+              </select>
+        </div>
+        <div class="main rounded">
+            <div class="screen text-center">
+                <em>screen</em>
+            </div>
+            <div class="seats">
+                <div class="row pt-3">
+                    <div class="col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                    <div class="middle col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        
+                    </div>
+                    <div class="middle col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        
+                    </div>
+                    <div class="middle col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        
+                    </div>
+                    <div class="middle col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                        <i class="fas fa-chair fa-2x"></i>
+                    </div>
+                </div>
+            </div>  
+            <div class="legend rounded mt-3">
+                <p>
+                    <span class="mark rounded"> <img src="images/grey.png" alt="" class="grey rounded"> Available </span>
+                    <span class="mark rounded mx-3"> <img src="images/blue.png" alt="" class="blue rounded"> Selected </span>
+                    <span class="mark rounded"> <img src="images/red.png" alt="" class="red rounded"> Unavailable </span>
+                </p>
+            </div>
+        </div>
+        <button class="confirmTickets btn btn-light btn-lg mt-3 btn-lg" onclick="ticketsBooked()">Book Tickets!</button>
+    <div class="vertical-line">
+    <aside>
+        <div class="date-day">
+            <!-- JavaScript will append a create and append a <p> tag here with date and day -->
+        </div>
+        <div class="movies-poster">
+            <img id="movies-img" class="rounded" src="" alt=""></img>
+        </div>
+        <div class="bottom text-center hidden">
+            <p>Number of Tickets: <input class="col-md-3 text-center" id="tickets" type="number" max="5" min="1" value="1"></input></p>
+            <p>You Pay: <input class="col-md-4 text-center" type="text" id="you-pay" value="$15.00" disabled></input></p>
+            <button class="selectSeats btn btn-dark">Select Seats</button>
+        </div>
+    </aside>
+    </div>
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+</body>
+</html>

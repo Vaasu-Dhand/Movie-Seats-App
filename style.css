@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  /* To Center the content */
+  height: 100%;
+  width: 100%;
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out infinite;
+  font-family: "ubuntu", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  /* color: #fff; */
+  
+}
+
+.fa-film {
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  /* color: black; */
+}
+
+.fas {
+  color: black;
+}
+
+.header {
+  position: absolute;
+  width: 1000px;
+  top: 40%;
+  animation: slide-header 1s forwards ease paused;
+  
+  /* animation-direction: ; */
+}
+
+/* Animation */
+@keyframes slide-header {
+  from {
+    top: 40%;
+  }
+  to {
+    top: -30px;
+  }
+}
+
+select {
+    width: 50%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+
+/* to hide content */
+.hidden {
+  display: none;
+}
+
+.main {
+  height: 350px;
+  width: 500px;
+  border: 2px solid black;
+  position: relative;
+  top: 150px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  /* CENTER THE SCreen */
+  height: 30px;
+  width: 450px;
+  border-bottom: 30px solid rgb(241, 241, 232);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.middle {
+  display: inline-flex;
+}
+
+.legend {
+  background-color: wheat;
+  height: 50px;
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.legend > p {
+  margin-top: 10px;
+}
+
+.red,
+.blue,
+.grey {
+  width: 20px;
+}
+
+.confirmTickets {
+  position: relative;
+  top: 150px;
+  left: 250px;
+}
+
+.vertical-line {
+    border-left: 6px solid;
+    height: 100%;
+    position: absolute;
+    left: 70%;
+    /* margin-left: -3px; */
+    top: 0px;
+  }
+
+aside {
+    float: right;
+    position: relative;
+}
+.movies-poster {
+    height: 75vh;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+}
+
+#movies-img {
+    position: relative;
+    left: 17%;
+    margin-top: 10%;
+}
+
+.seats > i {
+    color: yellow;
+    border: 1px solid black;
+}
+
+.selected {
+  color: blue; 
+}
+
+@keyframes change {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
